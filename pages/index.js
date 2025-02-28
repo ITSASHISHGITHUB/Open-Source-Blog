@@ -283,49 +283,43 @@ function App() {
             <div className="text-xs md:text-sm text-gray-500">
               <p>This blog is made by Ashish Yadav</p>
             </div>
-            <div className="flex space-x-2 md:space-x-4">
-              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-blue-500 flex items-center justify-center text-white">
-                <span className="text-xs">FB</span>
-              </div>
-              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-sky-500 flex items-center justify-center text-white">
-                <span className="text-xs">TW</span>
-              </div>
-              <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-rose-500 flex items-center justify-center text-white">
-                <span className="text-xs">IG</span>
-              </div>
-            </div>
+            
           </div>
         </div>
 
         <footer className="mt-8 md:mt-12 pt-4 md:pt-6 border-t border-gray-200 bg-gray-50 rounded-lg shadow-inner">
-          <div className="flex flex-col md:flex-row justify-between items-center p-3 md:p-4">
-            <div className="mb-3 md:mb-0">
-              <div className="text-lg md:text-xl font-bold text-blue-700">Ashish Blogs</div>
-              <p className="text-gray-600 text-xs md:text-sm">
-                Insights on modern web development
-              </p>
-              <p className="text-gray-500 text-xs mt-1">
-                © {new Date().getFullYear()} All rights reserved
-              </p>
-            </div>
+  <div className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
+    {/* Left Section - Blog Info */}
+    <div className="mb-4 md:mb-0 text-center md:text-left">
+      <div className="text-lg md:text-xl font-bold text-blue-700">Ashish Blogs</div>
+      <p className="text-gray-600 text-xs md:text-sm mt-1">
+        Insights on modern web development
+      </p>
+      <p className="text-gray-500 text-xs mt-1">
+        © {new Date().getFullYear()} All rights reserved
+      </p>
+    </div>
 
-            <div className="flex items-center">
-              <a
-                href="https://www.linkedin.com/in/ashishyadav677/"
-                className="flex items-center bg-blue-700 hover:bg-blue-800 text-white px-3 py-1 md:px-4 md:py-2 rounded transition duration-300 text-xs md:text-sm"
-              >
-                <svg
-                  className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                </svg>
-                Connect on LinkedIn
-              </a>
-            </div>
-          </div>
-        </footer>
+    {/* Right Section - LinkedIn Button */}
+    <div className="flex items-center">
+      <a
+        href="https://www.linkedin.com/in/ashishyadav677/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg transition duration-300 text-xs md:text-sm"
+      >
+        <svg
+          className="w-4 h-4 md:w-5 md:h-5 mr-2"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+        </svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+  </div>
+</footer>
       </div>
     </div>
   );
